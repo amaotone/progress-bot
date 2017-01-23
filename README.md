@@ -10,3 +10,22 @@ LaTeX書かれた卒論の文字数をカウントして、Twitterに投稿し�
 - tweepy `pip install tweepy`
 
 あとは`detex`と`wc`を使います。
+
+## 使い方
+
+setting.jsonというファイルに、twitter applicationのconsumer keyとかを書きます。
+
+```json
+{
+  "consumer_key": "hoge",
+  "consumer_token": "fuga",
+  "token": "foo",
+  "secret": "bar"
+}
+```
+
+あとは
+
+```bash
+$ python progress.py <file>
+```
